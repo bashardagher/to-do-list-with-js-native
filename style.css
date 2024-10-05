@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 12px;
+}
+/*----------------------------------------*/
+.container .head{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 12px 0 0;
+    background-color: darkred;
+}
+.head span{
+    position: absolute;
+    right: 30px;
+    border: 2px black solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+/*----------------------------------------*/
+.container .tasks{
+    width: 100%;
+    border-radius:  0 0 12px 12px;
+}
+.tasks .task{
+    background-color:darkgrey;
+    width: 90%;
+    height: 60px;
+    margin: 10px auto;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tasks .task .box1{
+    margin-left: 10px;
+}
+.box1 .title{
+    font-size: 22px;
+    font-style: italic;
+}
+.box1 .date{
+    font-size: 12px;
+}
+.tasks .task .box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2 span{
+    border: 2px black solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+span:hover{
+    font-size: 18px;
+    background-color:darkslategrey;
+    border: none;
+}
+span.done{
+    background-color: green;
+}
+/*----------------------------------------*/
